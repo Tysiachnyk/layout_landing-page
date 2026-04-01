@@ -6,7 +6,7 @@ $ls-menu-phone: var(--spacing-0-5);
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: #e5e6e8;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -15,7 +15,6 @@ $ls-menu-phone: var(--spacing-0-5);
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #e5e5e5;
 
     @include on-tablet {
       margin-bottom: var(--spacing-0);
@@ -23,7 +22,7 @@ $ls-menu-phone: var(--spacing-0-5);
   }
 
   &__nav {
-    margin-bottom: var(--spacing-10);
+    margin-bottom: var(--spacing-12);
   }
 
   &__phone-number {

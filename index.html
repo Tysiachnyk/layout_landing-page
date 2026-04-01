@@ -32,7 +32,7 @@
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
-            <a href="#" class="top-bar__logo">
+            <a href="#" class="top-bar__logo top-bar__logo--link">
               <img
                 src="./src/images/logo.png"
                 alt="Nothing logo"
@@ -41,9 +41,9 @@
             <div class="top-bar__icons">
               <a
                 href="tel:+1 234 5555-55-55"
-                class="icon icon--phone"
-                title="+1 234 555-55-55"
+                class="icon icon--phone "
               ></a>
+              <span class="icon--phone-number">+1 234 555-55-55</span>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -95,7 +95,6 @@
           <a
             href="tel:+1 234 5555-55-55"
             class="menu__phone-number"
-            title="+1 234 555-55-55"
           >
           +1 234 5555-55-55
           </a>
@@ -158,7 +157,7 @@
               <article class="category">
                 <div class="category__photos">
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--wide"
                     target="_blank"
                   >
@@ -170,7 +169,7 @@
                   </a>
 
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--square"
                     target="_blank"
                   >
@@ -187,7 +186,7 @@
               <article class="category">
                 <div class="category__photos">
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--square"
                     target="_blank"
                   >
@@ -199,7 +198,7 @@
                   </a>
 
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--wide"
                     target="_blank"
                   >
@@ -216,7 +215,7 @@
               <article class="category">
                 <div class="category__photos">
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--wide"
                     target="_blank"
                   >
@@ -228,7 +227,7 @@
                   </a>
 
                   <a
-                    href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
+                    href="#"
                     class="category__link category__link--square"
                     target="_blank"
                   >
@@ -242,16 +241,13 @@
                 <h3 class="category__title">Accessories</h3>
               </article>
             </div>
-
-            <div class="categories__actions">
-              <a href="https://maps.app.goo.gl/BpgFm2tcp1MuGdHi6"
-                class="btn"
-                target="_blank"
+            <a
+              class="btn"
+              href="#"
+              target="_blank"
               >
               View all
-              </a>
-            </div>
-
+            </a>
             <div class="categories__plashka"></div>
           </section>
 
@@ -282,8 +278,9 @@
                 <div class="form__group">
                   <input
                     type="text"
+                    name="name"
                     class="form__input"
-                    placeholder="Andrew or Melisa (Your name !)"
+                    placeholder="Name"
                     required
                   >
                 </div>
@@ -291,17 +288,22 @@
                 <div class="form__group">
                   <input
                     type="email"
+                    name="email"
                     class="form__input"
-                    placeholder="andrew@example.com (Your email !)"
+                    placeholder="Email"
                     required
                   >
                 </div>
 
                 <div class="form__group">
                   <textarea
+                    placeholder="Message"
                     class="form__input form__input--textarea"
-                    placeholder="Hello, my name is Andrew and I would like to..."
-                    required></textarea>
+                    name="Message"
+                    id="message"
+                    required
+                    maxlength="300"
+                  ></textarea>
                 </div>
 
                 <button type="submit" class="form__btn btn--light">Send</button>
@@ -318,11 +320,17 @@
                 </div>
                 <div class="info__item">
                   <span class="info__label">Address</span>
-                  <p class="info__value">
-                    400 first ave. <br>
-                    suite 700 <br>
-                    Minneapolis, MN 55401
-                  </p>
+                  <a
+                    href="https://www.google.com/maps/search/400+first+ave.+suite+700+Minneapolis,+MN+55401"
+                    target="_blank"
+                    class="info__link"
+                  >
+                    <p class="info__value">
+                      400 first ave. <br>
+                      suite 700 <br>
+                      Minneapolis, MN 55401
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>

@@ -14,16 +14,22 @@
   &__icons {
     display: flex;
     gap: var(--spacing-6);
+    position: relative;
   }
 
   &__logo {
     height: var(--spacing-4);
-    display: flex;
+    display: block;
 
     @include hover(transform, scale(1.2));
 
     @include on-tablet {
       height: var(--spacing-6);
+    }
+
+    &--link {
+      display: flex;
+
     }
   }
 }
