@@ -1,15 +1,9 @@
 @import './mixins';
 
 .about {
-  --margin-bottom-about: 104px;
-
-  margin-bottom: var(--margin-bottom-about);
+  margin-bottom: 0;
 
   @include page-grid;
-
-  @include on-tablet {
-    --margin-bottom-about: 120px;
-  }
 
   &__title {
     grid-column: 1 / -1;
